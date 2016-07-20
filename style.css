@@ -1,3 +1,41 @@
-{
-  color: red;
+
+img {
+  width:100px;
+  height:100px;
+
+}
+body {
+  background-image: url(https://c2.staticflickr.com/8/7283/16386858141_65a65879cd_b.jpg);
+  width:100%;
+  height:100%;
+  background-image: );
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   -webkit-background-size: cover;
+
+}
+h1 {
+  background-color: none;
+
+}
+li {
+    float: right;
+    width: 100%;
+}
+div ul {
+    padding: ;
+    float: left;
+    border-bottom: ;
+    list-style-type: none;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    height: 25px;
+    padding: 12px 18px 8px 18px;
+    vertical-align: middle;
+    color: white;
+    background-color: black;
 }

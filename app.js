@@ -13,7 +13,6 @@ if (answer1 === 'yes' || answer1 === 'y') {
   alert('Sorry ' + userName + ',  the question is actually correct. She was born and raised in Tulsa, Oklahoma.');
 }
 }
-
 questionOne();
 
 function questionTwo() {
@@ -26,7 +25,6 @@ if (answer2 === 'no' || answer2 === 'n') {
   console.log('question 2 counter: ' + counter);
 }
 }
-
 questionTwo();
 
 function questionThree() {
@@ -39,7 +37,6 @@ if (answer3 === 'yes' || answer3 === 'y') {
   alert('No?, Really ' + userName + ' ? Come on now. She held records at every school she attended.');
 }
 }
-
 questionThree();
 
 function questionFour() {
@@ -54,6 +51,7 @@ if (answer4 === 'yes' || answer4 === 'y') {
 }
 questionFour();
 
+function questionFive() {
 var answer5 = prompt('Will there be a zombie apocalypse?').toLowerCase();
 if (answer5 === 'no' || answer5 === 'n') {
   alert('I sure hope not. Nobody has time for that foolishness.');
@@ -62,9 +60,11 @@ if (answer5 === 'no' || answer5 === 'n') {
 } else {
   alert('Wow! I dont think you have anything to worry about. Theres not going to be any zombies');
 }
+}
+questionFive();
+
 var userCorrect = false;
 var i = 0;
-
 while (answer6 !== 200 && i < 4){
   var answer6 = parseInt(prompt('How many licks does it take to get to the center of the toosie pop?'));
   if (answer6 < 200){

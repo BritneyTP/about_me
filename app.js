@@ -63,6 +63,7 @@ if (answer5 === 'no' || answer5 === 'n') {
 }
 questionFive();
 
+function questionSix() {
 var userCorrect = false;
 var i = 0;
 while (answer6 !== 200 && i < 4){
@@ -85,6 +86,8 @@ while (answer6 !== 200 && i < 4){
 if (userCorrect = false){
   alert('Too many tries. The answer was 200.');
 }
+}
+questionSix();
 
 var sports = ['track', 'basketball', 'softball', 'sleeping','eating','shopping'];
 var winning = false;

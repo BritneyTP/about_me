@@ -2,48 +2,70 @@ var counter = 0;
 var userName = prompt('Welcome to Britneys page. What is your name?');
 alert('Welcome ' + userName + ', Let\'s see if you can answer some questions about me!');
 
+
+function questionOne() {
 var answer1 = prompt('Was Britney born in Oklahoma?').toLowerCase();
 if (answer1 === 'yes' || answer1 === 'y') {
   alert('You are correct');
-  counter = counter++;
+  counter++;
+  console.log('question one counter: ' + counter)
 } else {
   alert('Sorry ' + userName + ',  the question is actually correct. She was born and raised in Tulsa, Oklahoma.');
 }
+}
+questionOne();
 
+function questionTwo() {
 var answer2 = prompt('Does Britney have any cats?').toLowerCase();
 if (answer2 === 'no' || answer2 === 'n') {
   alert('You are wrong. She has 5 cats named Cookie, Rocky, Revel, Roy, & Ligo.');
 } else {
   alert('You are correct ' + userName + ', Britney has 5 cats named Cookie, Rocky, Revel, Roy, & Ligo.');
-  counter = counter++;
+  counter++;
+  console.log('question 2 counter: ' + counter);
 }
+}
+questionTwo();
 
+function questionThree() {
 var answer3 = prompt('Was Britney any good at track?').toLowerCase();
-if (answer3 === 'Yes' || answer3 === 'y') {
+if (answer3 === 'yes' || answer3 === 'y') {
   alert('You are SO RIGHT! Record holder at every school she attended.');
-  counter = counter++;
+  counter++;
+  console.log('question 3 counter: '+ counter);
 } else {
   alert('No?, Really ' + userName + ' ? Come on now. She held records at every school she attended.');
 }
+}
+questionThree();
 
+function questionFour() {
 var answer4 = prompt('Is this Britney first time coding?').toLowerCase();
 if (answer4 === 'yes' || answer4 === 'y') {
   alert('You are right! three more question left.');
-  counter = counter++;
+  counter++;
+  console.log('question 4 counter: ' + counter);
 } else {
   alert('Sorry, you got it wrong. Maybe you will have better luck with the last question.');
 }
+}
+questionFour();
 
+function questionFive() {
 var answer5 = prompt('Will there be a zombie apocalypse?').toLowerCase();
 if (answer5 === 'no' || answer5 === 'n') {
   alert('I sure hope not. Nobody has time for that foolishness.');
+  counter++;
+  console.log('question 5 counter: ' + counter);
 } else {
   alert('Wow! I dont think you have anything to worry about. Theres not going to be any zombies');
-  counter = counter++;
 }
+}
+questionFive();
+
+function questionSix() {
 var userCorrect = false;
 var i = 0;
-
 while (answer6 !== 200 && i < 4){
   var answer6 = parseInt(prompt('How many licks does it take to get to the center of the toosie pop?'));
   if (answer6 < 200){
@@ -55,6 +77,8 @@ while (answer6 !== 200 && i < 4){
   else if (answer6 === 200) {
     alert('You are correct.');
     var userCorrect = true;
+    counter++;
+    console.log('question 6 counter: ' + counter);
     i = 4;
   }
   i++;
@@ -62,7 +86,10 @@ while (answer6 !== 200 && i < 4){
 if (userCorrect = false){
   alert('Too many tries. The answer was 200.');
 }
+}
+questionSix();
 
+function questionSeven() {
 var sports = ['track', 'basketball', 'softball', 'sleeping','eating','shopping'];
 var winning = false;
 for (var x = 0; x < 6; x++) {
@@ -71,7 +98,8 @@ for (var x = 0; x < 6; x++) {
     if (answer7 === sports[j] ) {
       alert('You are correct.');
       winning = true;
-      counter = counter++;
+      counter++;
+      console.log('question 7 counter: ' + counter);
       break;
     }
   }
@@ -81,6 +109,8 @@ for (var x = 0; x < 6; x++) {
   if (winning === true){
     break;
   }
-
 }
-alert('You got' + counter + 'out of 7 questions correct,');
+}
+questionSeven();
+
+alert('You got ' + counter + ' out of 7 questions correct,');

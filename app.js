@@ -29,6 +29,7 @@ if (answer2 === 'no' || answer2 === 'n') {
 
 questionTwo();
 
+function questionThree() {
 var answer3 = prompt('Was Britney any good at track?').toLowerCase();
 if (answer3 === 'yes' || answer3 === 'y') {
   alert('You are SO RIGHT! Record holder at every school she attended.');
@@ -37,6 +38,10 @@ if (answer3 === 'yes' || answer3 === 'y') {
 } else {
   alert('No?, Really ' + userName + ' ? Come on now. She held records at every school she attended.');
 }
+}
+
+questionThree();
+
 
 var answer4 = prompt('Is this Britney first time coding?').toLowerCase();
 if (answer4 === 'yes' || answer4 === 'y') {

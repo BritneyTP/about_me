@@ -43,6 +43,7 @@ if (answer5 === 'no' || answer5 === 'n') {
 }
 var userCorrect = false;
 var i = 0;
+
 while (answer6 !== 200 && i < 4){
   var answer6 = parseInt(prompt('How many licks does it take to get to the center of the toosie pop?'));
   if (answer6 < 200){

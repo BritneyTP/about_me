@@ -1,9 +1,11 @@
+var counter = 0;
 var userName = prompt('Welcome to Britneys page. What is your name?');
 alert('Welcome ' + userName + ', Let\'s see if you can answer some questions about me!');
 
 var answer1 = prompt('Was Britney born in Oklahoma?').toLowerCase();
 if (answer1 === 'yes' || answer1 === 'y') {
   alert('You are correct');
+  counter = counter++;
 } else {
   alert('Sorry ' + userName + ',  the question is actually correct. She was born and raised in Tulsa, Oklahoma.');
 }
@@ -13,11 +15,13 @@ if (answer2 === 'no' || answer2 === 'n') {
   alert('You are wrong. She has 5 cats named Cookie, Rocky, Revel, Roy, & Ligo.');
 } else {
   alert('You are correct ' + userName + ', Britney has 5 cats named Cookie, Rocky, Revel, Roy, & Ligo.');
+  counter = counter++;
 }
 
 var answer3 = prompt('Was Britney any good at track?').toLowerCase();
 if (answer3 === 'Yes' || answer3 === 'y') {
   alert('You are SO RIGHT! Record holder at every school she attended.');
+  counter = counter++;
 } else {
   alert('No?, Really ' + userName + ' ? Come on now. She held records at every school she attended.');
 }
@@ -25,6 +29,7 @@ if (answer3 === 'Yes' || answer3 === 'y') {
 var answer4 = prompt('Is this Britney first time coding?').toLowerCase();
 if (answer4 === 'yes' || answer4 === 'y') {
   alert('You are right! three more question left.');
+  counter = counter++;
 } else {
   alert('Sorry, you got it wrong. Maybe you will have better luck with the last question.');
 }
@@ -34,8 +39,9 @@ if (answer5 === 'no' || answer5 === 'n') {
   alert('I sure hope not. Nobody has time for that foolishness.');
 } else {
   alert('Wow! I dont think you have anything to worry about. Theres not going to be any zombies');
+  counter = counter++;
 }
-
+var userCorrect = false;
 var i = 0;
 while (answer6 !== 200 && i < 4){
   var answer6 = parseInt(prompt('How many licks does it take to get to the center of the toosie pop?'));
@@ -47,11 +53,12 @@ while (answer6 !== 200 && i < 4){
   }
   else if (answer6 === 200) {
     alert('You are correct.');
+    var userCorrect = true;
     i = 4;
   }
   i++;
 }
-if (i = 4){
+if (userCorrect = false){
   alert('Too many tries. The answer was 200.');
 }
 
@@ -63,6 +70,7 @@ for (var x = 0; x < 6; x++) {
     if (answer7 === sports[j] ) {
       alert('You are correct.');
       winning = true;
+      counter = counter++;
       break;
     }
   }
@@ -74,3 +82,4 @@ for (var x = 0; x < 6; x++) {
   }
 
 }
+alert('You got' + counter + 'out of 7 questions correct,');

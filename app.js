@@ -24,7 +24,7 @@ if (answer3 === 'Yes' || answer3 === 'y') {
 
 var answer4 = prompt('Is this Britney first time coding?').toLowerCase();
 if (answer4 === 'yes' || answer4 === 'y') {
-  alert('You are right! One more question left.');
+  alert('You are right! three more question left.');
 } else {
   alert('Sorry, you got it wrong. Maybe you will have better luck with the last question.');
 }
@@ -34,4 +34,43 @@ if (answer5 === 'no' || answer5 === 'n') {
   alert('I sure hope not. Nobody has time for that foolishness.');
 } else {
   alert('Wow! I dont think you have anything to worry about. Theres not going to be any zombies');
+}
+
+var i = 0;
+while (answer6 !== 200 && i < 4){
+  var answer6 = parseInt(prompt('How many licks does it take to get to the center of the toosie pop?'));
+  if (answer6 < 200){
+    alert ('Your number is too low');
+  }
+  else if (answer6 > 200){
+    alert('You number is to high');
+  }
+  else if (answer6 === 200) {
+    alert('You are correct.');
+    i = 4;
+  }
+  i++;
+}
+if (i = 4){
+  alert('Too many tries. The answer was 200.');
+}
+
+var sports = ['track', 'basketball', 'softball', 'sleeping','eating','shopping'];
+var winning = false;
+for (var x = 0; x < 6; x++) {
+  var answer7 = prompt('What sport did Britney play?');
+  for(var j = 0; j < sports.length; j++){
+    if (answer7 === sports[j] ) {
+      alert('You are correct.');
+      winning = true;
+      break;
+    }
+  }
+  if (winning === false){
+    alert('No sorry. The answer is wrong.');
+  }
+  if (winning === true){
+    break;
+  }
+
 }

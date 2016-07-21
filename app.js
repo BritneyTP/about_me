@@ -16,6 +16,7 @@ if (answer1 === 'yes' || answer1 === 'y') {
 
 questionOne();
 
+function questionTwo() {
 var answer2 = prompt('Does Britney have any cats?').toLowerCase();
 if (answer2 === 'no' || answer2 === 'n') {
   alert('You are wrong. She has 5 cats named Cookie, Rocky, Revel, Roy, & Ligo.');
@@ -24,6 +25,9 @@ if (answer2 === 'no' || answer2 === 'n') {
   counter++;
   console.log('question 2 counter: ' + counter);
 }
+}
+
+questionTwo();
 
 var answer3 = prompt('Was Britney any good at track?').toLowerCase();
 if (answer3 === 'yes' || answer3 === 'y') {

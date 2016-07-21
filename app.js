@@ -42,7 +42,7 @@ if (answer3 === 'yes' || answer3 === 'y') {
 
 questionThree();
 
-
+function questionFour() {
 var answer4 = prompt('Is this Britney first time coding?').toLowerCase();
 if (answer4 === 'yes' || answer4 === 'y') {
   alert('You are right! three more question left.');
@@ -51,6 +51,8 @@ if (answer4 === 'yes' || answer4 === 'y') {
 } else {
   alert('Sorry, you got it wrong. Maybe you will have better luck with the last question.');
 }
+}
+questionFour();
 
 var answer5 = prompt('Will there be a zombie apocalypse?').toLowerCase();
 if (answer5 === 'no' || answer5 === 'n') {

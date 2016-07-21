@@ -89,6 +89,7 @@ if (userCorrect = false){
 }
 questionSix();
 
+function questionSeven() {
 var sports = ['track', 'basketball', 'softball', 'sleeping','eating','shopping'];
 var winning = false;
 for (var x = 0; x < 6; x++) {
@@ -108,6 +109,8 @@ for (var x = 0; x < 6; x++) {
   if (winning === true){
     break;
   }
-
 }
+}
+questionSeven();
+
 alert('You got ' + counter + ' out of 7 questions correct,');

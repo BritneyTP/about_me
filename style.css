@@ -1,40 +1,106 @@
 
 img {
-  width:150/px;
-  height:150px;
-  float: center;
+  width:300px;
+  height:300px;
+  float: right;
   display: inline-block;
   padding: 10px;
+}
+
+
+#bio {
+  padding-top : 30px;
+  float : left;
+  width: 250px;
+  text-align: justify;
+  margin-left : 50px;
 
 }
-body {
-  background-image: url(http://slodive.com/wp-content/uploads/2012/04/wood-background/cool-wood-background.jpg);
+#education {
+  padding-top : 30px;
+  float :inherit;
+  width: 250px;
+  text-align: justify;
+  margin-left : 50px;
+
+}
+img.medium {
+  width:700px;
+  height:500px;
+  float:left;
+
+
+}
+img.large {
+  width:300px;
+  height:300px;
+  float: right;
+}
+img.align-right {
+  float:right;
+  margin-right: 10px;
+}
+div {
+  border: 3px solid #665544;
+  overflow: auto;
   width:100%;
-  height:100%;
-  background-image: );
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   -webkit-background-size: cover;
-   text-align: white;
+}
+body {
+  background-color: #ccffff;
+  text-align: center;
 
 }
 h1 {
   background-color: none;
+  color: #331122;
+  font-size: 150px;
 
+}
+h2 {
+  font-size: 20px;
+  color: #331122;
+  text-decoration: underline;
+}
+h3 {
+  font-size: 20px;
+  color:#331122;
+  text-decoration: underline;
+}
+h4 {
+  font-size: 20px;
+  color: #331122;
+  text-decoration: underline;
+}
+h5 {
+  font-size: 20px;
+  text-decoration: underline;
+
+}
+h6 {
+  font-size: 20px;
+  color: #331122;
+  text-decoration: underline;
 }
 div ul {
     padding: ;
-    float: left;
+    float: center;
     border-bottom: ;
     list-style-type: none;
 }
-li {
-    float: left;
-}
-li a {
-    display: block;
-    height: 25px;
-    padding: 12px 18px 8px 18px;
-    vertical-align: middle;
-    color: white;
-    background-color: black;
+  ol li{
+    float:left;
+    margin-left: 45px;
+  }
+  * {
+    margin: 0;
+  }
+  #bg {
+    background-image: url ('https://ton.twitter.com/1.1/ton/data/dm/757075540591292420/757075540620611584/4pdFQCgi.jpg:large');
+    width:100%;
+    height:100vh;
+  }
+  footer {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+  }
